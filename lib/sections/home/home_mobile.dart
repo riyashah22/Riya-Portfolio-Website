@@ -22,7 +22,7 @@ class HomeMobile extends StatelessWidget {
             child: Opacity(
               opacity: 0.9,
               child: Image.asset(
-                StaticUtils.blackWhitePhoto,
+                "assets/photos/img_final.png",
                 height: AppDimensions.normalize(150),
               ),
             ),

@@ -19,19 +19,23 @@ class HomeDesktop extends StatelessWidget {
       child: Stack(
         children: [
           Positioned(
-            bottom: 0,
-            right: 0,
+            bottom: 130,
+            right: 100,
             child: Opacity(
               opacity: 0.9,
               child: EntranceFader(
                 offset: const Offset(0, 0),
                 delay: const Duration(seconds: 1),
                 duration: const Duration(milliseconds: 800),
-                child: Image.asset(
-                  StaticUtils.blackWhitePhoto,
-                  height: size.width < 1200
-                      ? size.height * 0.8
-                      : size.height * 0.85,
+                child: ClipOval(
+                  child: Image.asset(
+                    "assets/photos/img_final.png",
+                    height: size.width < 1200
+                        ? size.height * 0.5
+                        : size.height * 0.7,
+                    fit: BoxFit
+                        .cover, // Ensures the image fits within the circle
+                  ),
                 ),
               ),
             ),
@@ -61,14 +65,14 @@ class HomeDesktop extends StatelessWidget {
                       duration: const Duration(milliseconds: 800),
                       child: Image.asset(
                         StaticUtils.hi,
-                        height: AppDimensions.normalize(12),
+                        height: AppDimensions.normalize(14),
                       ),
                     ),
                   ],
                 ),
                 Space.y1!,
                 Text(
-                  "Muhammad",
+                  "Riya",
                   style: AppText.h1!.copyWith(
                     fontFamily: 'Montserrat',
                     fontSize: AppDimensions.normalize(25),
@@ -76,7 +80,7 @@ class HomeDesktop extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "Hamza",
+                  "Shah",
                   style: AppText.h1b!.copyWith(
                     fontSize: AppDimensions.normalize(25),
                     height: 1,
@@ -105,7 +109,12 @@ class HomeDesktop extends StatelessWidget {
                             textStyle: AppText.b1,
                           ),
                           TyperAnimatedText(
-                            ' A friend :)',
+                            ' Full-Stack Mobile Developer',
+                            speed: const Duration(milliseconds: 50),
+                            textStyle: AppText.b1,
+                          ),
+                          TyperAnimatedText(
+                            ' Be a Friend :)',
                             speed: const Duration(milliseconds: 50),
                             textStyle: AppText.b1,
                           ),

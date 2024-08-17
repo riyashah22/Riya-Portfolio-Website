@@ -29,6 +29,7 @@ class _ServiceCardBackWidget extends StatelessWidget {
             onPressed: () => showDialog(
                 context: context,
                 builder: (contecxt) => AlertDialog(
+                      backgroundColor: Colors.white,
                       title: Text(
                         "Hire Me!",
                         style: AppText.b2b,
@@ -46,7 +47,7 @@ class _ServiceCardBackWidget extends StatelessWidget {
                           MaterialButton(
                             height: 40.0,
                             onPressed: () => openURL(
-                              'https://api.whatsapp.com/send?phone=923460159889',
+                              'https://api.whatsapp.com/send?phone=7874333963',
                             ),
                             color: const Color(0xff34CB62),
                             child: Row(
@@ -70,20 +71,20 @@ class _ServiceCardBackWidget extends StatelessWidget {
                           MaterialButton(
                             height: 40.0,
                             onPressed: () => openURL(
-                              'https://www.upwork.com/freelancers/~0197b0f6aaeba9675f',
+                              'https://www.linkedin.com/in/shahriyap/',
                             ),
                             color: const Color(0xff13A800),
                             child: Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [
                                 Image.network(
-                                  'https://img.icons8.com/ios-filled/50/000000/upwork.png',
+                                  'https://img.icons8.com/color/48/linkedin.png',
                                   height: 35.0,
-                                  color: Colors.white,
+                                  // color: Colors.white,
                                 ),
                                 Space.x!,
                                 Text(
-                                  'Upwork',
+                                  'LinkedIn',
                                   style: AppText.l1!.copyWith(
                                     color: Colors.white,
                                   ),

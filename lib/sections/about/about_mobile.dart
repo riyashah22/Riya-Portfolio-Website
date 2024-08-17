@@ -32,7 +32,7 @@ class AboutMobile extends StatelessWidget {
           ),
           Space.y1!,
           Image.asset(
-            StaticUtils.mobilePhoto,
+            "assets/photos/img.png",
             height: height * 0.27,
           ),
           SizedBox(
@@ -96,14 +96,21 @@ class AboutMobile extends StatelessWidget {
           ),
           const AboutMeData(
             data: "Name",
-            information: "Muhammad Hamza",
+            information: "Riya Shah",
+          ),
+          AboutMeData(
+            data: "Age",
+            information: "21",
           ),
           const AboutMeData(
             data: "Email",
-            information: "hamza.6.shakeel@gmail.com",
+            information: "shah.riyapranav@mca.christuniversity.in",
           ),
           Space.y!,
-          OutlinedButton(
+          ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: AppTheme.c!.primary,
+                  foregroundColor: Colors.white),
               child: const Text("Resume"),
               onPressed: () {
                 kIsWeb
@@ -111,20 +118,6 @@ class AboutMobile extends StatelessWidget {
                     : openURL(StaticUtils.resume);
               }),
           Space.y!,
-          Wrap(
-              alignment: WrapAlignment.center,
-              crossAxisAlignment: WrapCrossAlignment.center,
-              children: WorkUtils.logos
-                  .asMap()
-                  .entries
-                  .map(
-                    (e) => CommunityIconBtn(
-                      icon: e.value,
-                      link: WorkUtils.communityLinks[e.key],
-                      height: WorkUtils.communityLogoHeight[e.key],
-                    ),
-                  )
-                  .toList()),
         ],
       ),
     );

@@ -55,7 +55,7 @@ class _ServiceCardState extends State<_ServiceCard> {
             boxShadow: isHover
                 ? [
                     BoxShadow(
-                      color: AppTheme.c!.primary!.withAlpha(100),
+                      color: AppTheme.c!.primary!.withAlpha(70),
                       blurRadius: 12.0,
                       offset: const Offset(0.0, 0.0),
                     )

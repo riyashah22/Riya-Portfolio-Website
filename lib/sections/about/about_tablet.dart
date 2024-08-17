@@ -36,7 +36,7 @@ class AboutTab extends StatelessWidget {
           ),
           Space.y1!,
           Image.asset(
-            StaticUtils.mobilePhoto,
+            "assets/photos/img.png",
             height: height * 0.27,
           ),
           SizedBox(
@@ -98,11 +98,11 @@ class AboutTab extends StatelessWidget {
                 children: const [
                   AboutMeData(
                     data: "Name",
-                    information: "Muhammad Hamza",
+                    information: "Riya Shah",
                   ),
                   AboutMeData(
                     data: "Age",
-                    information: "24",
+                    information: "21",
                   ),
                 ],
               ),
@@ -114,11 +114,11 @@ class AboutTab extends StatelessWidget {
                 children: const [
                   AboutMeData(
                     data: "Email",
-                    information: "hamza.6.shakeel@gmail.com",
+                    information: "shah.riyapranav@mca.christuniversity.in",
                   ),
                   AboutMeData(
                     data: "From",
-                    information: "Attock, PK",
+                    information: "Bangaluru, KA",
                   ),
                 ],
               ),
@@ -130,7 +130,10 @@ class AboutTab extends StatelessWidget {
               SizedBox(
                 height: AppDimensions.normalize(13),
                 width: AppDimensions.normalize(40),
-                child: OutlinedButton(
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: AppTheme.c!.primary,
+                      foregroundColor: Colors.white),
                   onPressed: () => html.window.open(StaticUtils.resume, 'pdf'),
                   child: const Text(
                     "Resume",
@@ -138,32 +141,6 @@ class AboutTab extends StatelessWidget {
                 ),
               ),
               Space.x!,
-              Container(
-                width: width * 0.05,
-                decoration: BoxDecoration(
-                  border: Border(
-                    bottom: BorderSide(
-                      color: Colors.grey[900]!,
-                      width: 2.0,
-                    ),
-                  ),
-                ),
-              ),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                    children: WorkUtils.logos
-                        .asMap()
-                        .entries
-                        .map(
-                          (e) => CommunityIconBtn(
-                            icon: e.value,
-                            link: WorkUtils.communityLinks[e.key],
-                            height: WorkUtils.communityLogoHeight[e.key],
-                          ),
-                        )
-                        .toList()),
-              ),
             ],
           )
         ],

@@ -1,7 +1,7 @@
 class AboutUtils {
   static const String aboutMeHeadline =
-      'I\'m Muhammad Hamza, a Flutter developer, Technical blog writer and UI designer.';
+      'I\'m Riya Shah, a Flutter Developer and UI-UX Designer.';
 
   static const String aboutMeDetail =
-      'I\'m a Fresh Graduate with Computer Science as Majors from COMSATS University, Islamabad. I have been developing mobile apps for over 2 years now. I have worked in teams for various startups and helped them in launching their prototypes and got valuable learning experience. Been a former  Google Developer Student Clubs (DSC) lead and also CEO/Co-Founder Flutter Islamabad, Pakistan. Currently working as Associate Software Engineer at Sastaticket.pk';
+      'I\'m a fresh graduate with a major in Computer Science from CHRIST (Deemed to be) University, Bengaluru. I have been developing mobile apps for over 3 years, working with various startups to help launch their prototypes, gaining valuable hands-on experience. Currently, I’m working on a college project where I deployed a Departmental Forum for CHRIST University, supporting 2,000 students and 200 faculty members. I optimized a unified platform for departmental updates, announcements, and streamlined event registration. Additionally, I integrated poster validation with 98% accuracy and automated report generation using generative AI, reducing paperwork by 80%.';
 }

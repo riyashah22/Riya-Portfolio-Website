@@ -35,7 +35,7 @@ class AboutDesktop extends StatelessWidget {
             children: [
               Expanded(
                 child: Image.asset(
-                  StaticUtils.coloredPhoto,
+                  "assets/photos/img.png",
                   height: height * 0.7,
                 ),
               ),
@@ -102,11 +102,11 @@ class AboutDesktop extends StatelessWidget {
                             children: const [
                               AboutMeData(
                                 data: "Name",
-                                information: "Muhammad Hamza",
+                                information: "Riya Shah",
                               ),
                               AboutMeData(
                                 data: "Age",
-                                information: "24",
+                                information: "21",
                               ),
                             ],
                           ),
@@ -116,11 +116,12 @@ class AboutDesktop extends StatelessWidget {
                             children: const [
                               AboutMeData(
                                 data: "Email",
-                                information: "hamza.6.shakeel@gmail.com",
+                                information:
+                                    "shah.riyapranav@mca.christuniversity.in",
                               ),
                               AboutMeData(
                                 data: "From",
-                                information: "Attock, PK",
+                                information: "Bangaluru, KA",
                               ),
                             ],
                           ),
@@ -132,7 +133,10 @@ class AboutDesktop extends StatelessWidget {
                           SizedBox(
                             height: AppDimensions.normalize(13),
                             width: AppDimensions.normalize(40),
-                            child: OutlinedButton(
+                            child: ElevatedButton(
+                              style: ElevatedButton.styleFrom(
+                                  backgroundColor: AppTheme.c!.primary,
+                                  foregroundColor: Colors.white),
                               onPressed: () =>
                                   html.window.open(StaticUtils.resume, 'pdf'),
                               child: const Text(
@@ -141,21 +145,6 @@ class AboutDesktop extends StatelessWidget {
                             ),
                           ),
                           Space.x1!,
-                          Container(
-                            color: Colors.grey[900]!,
-                            width: AppDimensions.normalize(30),
-                            height: AppDimensions.normalize(0.5),
-                          ),
-                          ...WorkUtils.logos.asMap().entries.map(
-                                (e) => Expanded(
-                                  child: CommunityIconBtn(
-                                    icon: e.value,
-                                    link: WorkUtils.communityLinks[e.key],
-                                    height:
-                                        WorkUtils.communityLogoHeight[e.key],
-                                  ),
-                                ),
-                              )
                         ],
                       ),
                     ],
