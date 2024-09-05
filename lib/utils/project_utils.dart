@@ -1,24 +1,24 @@
 class ProjectUtils {
   static const List<String> banners = [
     "assets/projects/christ.jpg",
-    // "assets/projects/travel.jpg",
-    "assets/projects/disaster.jpg",
+    "assets/projects/travel.jpg",
+    // "assets/projects/disaster.jpg",
     "assets/projects/vts.png",
     // "assets/projects/har.jpg",
   ];
 
   static const List<String> icons = [
     "assets/projects/flutter.png",
-    // "assets/photos/logo.png",
-    "assets/projects/medkit.png",
+    "assets/photos/logo.png",
+    // "assets/projects/medkit.png",
     "assets/photos/vts.png",
     // "assets/projects/hereiam.png",
   ];
 
   static const List<String> titles = [
     "EventQuest",
-    // "Abisiniya",
-    "Nature Disaster",
+    "Abisiniya",
+    // "Nature Disaster",
     "VTS-Banglore",
     // "Human Acitivity Detection",
   ];
