@@ -104,7 +104,7 @@ class AboutMobile extends StatelessWidget {
           ),
           const AboutMeData(
             data: "Email",
-            information: "shah.riyapranav@mca.christuniversity.in",
+            information: "riyapshah22@gmail.com",
           ),
           Space.y!,
           ElevatedButton(

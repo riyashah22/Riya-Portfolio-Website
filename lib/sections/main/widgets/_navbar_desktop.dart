@@ -47,7 +47,6 @@ class _NavbarDesktop extends StatelessWidget {
               ),
             ),
           ),
-         
         ],
       ),
     );

@@ -11,6 +11,5 @@ final kTools = [
   "MongoDB",
   "NodeJS",
   "Firebase",
-  "Python",
-  "MySQL",
+  "Postman",
 ];

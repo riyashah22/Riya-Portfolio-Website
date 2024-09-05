@@ -16,6 +16,6 @@ class ContactUtils {
   static const List<String> details = [
     "Bangaluru, Karnataka",
     "(+91) 7874333963",
-    "shah.riyapranav@mca.christuniversity.in",
+    "riyapshah22@gmail.com",
   ];
 }

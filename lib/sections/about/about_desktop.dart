@@ -32,9 +32,11 @@ class AboutDesktop extends StatelessWidget {
           Row(
             children: [
               Expanded(
-                child: Image.asset(
-                  "assets/photos/img.png",
-                  height: height * 0.7,
+                child: ClipOval(
+                  child: Image.asset(
+                    "assets/photos/img.png",
+                    height: height * 0.7,
+                  ),
                 ),
               ),
               Expanded(
@@ -114,8 +116,7 @@ class AboutDesktop extends StatelessWidget {
                             children: const [
                               AboutMeData(
                                 data: "Email",
-                                information:
-                                    "shah.riyapranav@mca.christuniversity.in",
+                                information: "riyapshah22@gmail.com",
                               ),
                               AboutMeData(
                                 data: "From",
